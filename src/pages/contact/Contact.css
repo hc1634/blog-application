@@ -1,0 +1,29 @@
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f5;
+  width: 100%;
+}
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  height: 100%;
+}
+.contact-subtitle {
+  font-size: 24px;
+  font-weight: bold;
+}
+.contact-text {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.5;
+}
+@media (max-width: 768px) {
+  .contact-info {
+    width: 100%;
+    padding: 20px;
+  }
+}
