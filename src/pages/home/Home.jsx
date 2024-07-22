@@ -15,7 +15,7 @@ const Home = ({ articles = [] }) => {
           <div className="wave-text">
             <h1>Featured Blogs</h1>
             <button className="show-all-articles">
-              <Link to="/articles">Show all articles</Link>
+              <Link to="/blogs">Show all articles</Link>
             </button>
           </div>
           <div className="main-container">
@@ -33,7 +33,7 @@ const Home = ({ articles = [] }) => {
                     <p className="card-description">{article.description}</p>
                     <Link
                       className="card-button"
-                      to={`/articles/${article.title}`}
+                      to={`/blogs/${article.title}`}
                       rel="noreferrer"
                     >
                       Read more

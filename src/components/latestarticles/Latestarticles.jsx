@@ -12,7 +12,7 @@ const Latestarticles = ({ articles = [] }) => {
         <div className="latest-section-wave-text">
           <h1>Latest Articles</h1>
           <button className="show-all-latest-articles">
-            <Link to="/articles">Show all articles</Link>
+            <Link to="/blogs">Show all articles</Link>
           </button>
         </div>
         <div className="latest-container">
@@ -28,7 +28,7 @@ const Latestarticles = ({ articles = [] }) => {
                 <p className="latest-card-description">{article.description}</p>
                 <Link
                   className="latest-card-button"
-                  to={`/articles/${article.title}`}
+                  to={`/blogs/${article.title}`}
                   rel="noreferrer"
                 >
                   Read more
