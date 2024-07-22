@@ -7,7 +7,6 @@ import Latestarticles from "../../components/latestarticles/Latestarticles";
 // import Footer from "../../components/footer/Footer";
 
 const Home = ({ articles = [] }) => {
-  // console.log(articles);
   return (
     <>
       <div className="home">

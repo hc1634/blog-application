@@ -13,8 +13,6 @@ import Termsofservice from "./pages/termsofservice/Termsofservice";
 
 function App() {
   const [articles, setArticles] = useState([]);
-  const [loading, setLoading] = useState(true);
-
   useEffect(() => {
     axios
       .get(
@@ -22,15 +20,11 @@ function App() {
       )
       .then((res) => {
         setArticles(res.data.articles);
-        setLoading(false);
       })
       .catch((err) => {
         console.log(err);
       });
   }, []);
-  if (loading) {
-    return <div>Loading...</div>;
-  }
   return (
     <Router>
       <Navbar />

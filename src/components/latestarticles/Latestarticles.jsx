@@ -17,8 +17,8 @@ const Latestarticles = ({ articles = [] }) => {
         </div>
         <div className="latest-container">
           <div className="latest-cards-container">
-            {latestArticles.slice(0, 3).map((article) => (
-              <div className="latest-card">
+            {latestArticles.slice(0, 3).map((article,index) => (
+              <div className="latest-card" key={index}>
                 <img
                   className="latest-card-img"
                   src={article.urlToImage}

@@ -15,7 +15,6 @@ const ContactForm = () => {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    console.log(formData);
     if (!formData.name && !formData.email && !formData.message) {
       alert("Please fill in all fields");
     } else {
@@ -29,7 +28,6 @@ const ContactForm = () => {
         "https://blogapplication-c153b-default-rtdb.firebaseio.com/ContactUs.json",
         options
       );
-      console.log(res);
       if (res) {
         alert("Form submitted successfully");
       }
