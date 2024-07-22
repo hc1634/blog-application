@@ -21,8 +21,11 @@ function App() {
       .then((res) => {
         setArticles(res.data.articles);
       })
-      .catch((err) => {
-        console.log(err);
+      .catch((error) => {
+        console.error(
+          "Error details:",
+          error.response ? error.response.data : error.message
+        );
       });
   }, []);
   return (
