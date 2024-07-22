@@ -25,7 +25,7 @@ const Articles = ({ articles }) => {
               <p className="card-description">{article.description}</p>
               <Link
                 className="card-button"
-                to={`/articles/${article.title}`}
+                to={`/blogs/${article.title}`}
                 rel="noreferrer"
               >
                 Read more
@@ -39,8 +39,13 @@ const Articles = ({ articles }) => {
       <div className="footer-section">
         <p className="copyright">Copyright © 2023. All rights reserved.</p>
         <p className="copyright">
-          <Link className="footer-link" to="/termsofservice">Terms of Service</Link> |{" "}
-          <Link className="footer-link" to="/privacypolicy">Privacy Policy</Link>
+          <Link className="footer-link" to="/termsofservice">
+            Terms of Service
+          </Link>{" "}
+          |{" "}
+          <Link className="footer-link" to="/privacypolicy">
+            Privacy Policy
+          </Link>
         </p>
         <p className="copyright">Follow us : </p>
       </div>

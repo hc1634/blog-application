@@ -16,7 +16,7 @@ function App() {
   useEffect(() => {
     axios
       .get(
-        "https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=9603ab7b26a54b938a45298e87f8b81b"
+        `https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=9603ab7b26a54b938a45298e87f8b81b`
       )
       .then((res) => {
         setArticles(res.data.articles);
